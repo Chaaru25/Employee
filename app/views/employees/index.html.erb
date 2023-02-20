@@ -1,0 +1,13 @@
+
+<table border 1>
+<% EmployeeDetail.all.each do |emp|%>
+<tr>
+<td><%= link_to emp.name, employee_path(emp) %></td>
+<td><%= button_to 'Edit',edit_employee_path(emp), method:'get' %></td>
+<td><%= button_to 'Remove',employee_path(emp), method:'delete', data:{ confirm:"Are you sure to delete"} %></td>
+</tr>
+    
+    <% end %>
+    <%= link_to "Add New Employee",new_employee_path %>
+</table>
+

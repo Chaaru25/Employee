@@ -1,0 +1,9 @@
+<h3>Update a Employee</h3>
+<%= form_with model: @EmployeeDetail do |f|%>
+    <%= f.text_field :name,placeholder:"Enter the name" %><br>
+    <%= f.number_field :age,placeholder:"Enter the age"%><br>
+    <%= f.text_field :gender,placeholder:"Enter the gender" %><br>
+    <%= f.text_field :designation,placeholder:"Enter the designation" %><br>
+    <%= f.submit %>
+    <% end %>
+  
