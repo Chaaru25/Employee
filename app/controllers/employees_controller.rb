@@ -20,12 +20,12 @@ class EmployeesController < ApplicationController
  end
   def update
     @employee = EmployeeDetail.find(params[:id]) 
-    @employee = update(employee_params)
+    @employee.update(employee_params)
     redirect_to employee_path
   end
   def destroy
     @employee = EmployeeDetail.find(params[:id]) 
-    @employee = destroy
+    @employee.destroy
     redirect_to employee_path
 
 
