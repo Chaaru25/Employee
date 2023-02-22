@@ -13,7 +13,7 @@ class EmployeesController < ApplicationController
 
   def create
     employee = EmployeeDetail.create(employee_params)
-    redirect_to employee_path
+    redirect_to employees_path()
   end
    def edit
     @employee = EmployeeDetail.find(params[:id])
@@ -21,12 +21,12 @@ class EmployeesController < ApplicationController
   def update
     @employee = EmployeeDetail.find(params[:id]) 
     @employee.update(employee_params)
-    redirect_to employee_path
+    redirect_to employees_path
   end
   def destroy
     @employee = EmployeeDetail.find(params[:id]) 
     @employee.destroy
-    redirect_to employee_path
+    redirect_to employees_path
 
 
   end

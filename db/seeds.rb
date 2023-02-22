@@ -10,3 +10,7 @@ EmployeeDetail.create(name:"Anusham",age:"25",gender:"Female",designation:"Manag
 EmployeeDetail.create(name:"Banu",age:"25",gender:"Female",designation:"contractor")
 EmployeeDetail.create(name:"Chandru",age:"25",gender:"Male",designation:"Worker")
 EmployeeDetail.create(name:"Deepan",age:"25",gender:"Male",designation:"worker")
+EmployeeDetail.create(name:"Anusham",age:"25",gender:"Female",designation:"Manager")
+EmployeeDetail.create(name:"Banu",age:"25",gender:"Female",designation:"contractor")
+EmployeeDetail.create(name:"Chandru",age:"25",gender:"Male",designation:"Worker")
+EmployeeDetail.create(name:"Deepan",age:"25",gender:"Male",designation:"worker")
